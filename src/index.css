@@ -5,9 +5,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e0e0e0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+.card {
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 411px) {
+  .card {
+    align-items: center;
+    width: 90%;
+  }
+  input[type='submit'],
+  .select {
+    width: 100%;
+  }
 }

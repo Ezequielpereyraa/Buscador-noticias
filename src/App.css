@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.margen {
+  margin: 5rem 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
